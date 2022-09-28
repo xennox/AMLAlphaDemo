@@ -1,0 +1,3 @@
+aiogram==2.11.2
+asyncio==3.4.3
+pytzkt==0.1.1
