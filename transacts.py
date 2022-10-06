@@ -89,7 +89,7 @@ async def infinity_transctions_updates():
                         if avgTxsForDay < 5:
                             if str(target) not in storage_adreses[0]:
                                 cursor.execute(
-                                    f"""INSERT INTO users (id, name, adreses, ticket) VALUES ('added bot', 'added bot', '{str(target)}', 'Bot Added')""")
+                                    f"""INSERT INTO users (id, name, adreses, ticket) VALUES ('{str(mid)}', 'added bot', '{str(target)}', 'Bot Added')""")
                                 connection.commit()
                         if avgTxsForDay > 5:
                             pass
